@@ -1,0 +1,1 @@
+# vscode-isrpo-clean-spaces
