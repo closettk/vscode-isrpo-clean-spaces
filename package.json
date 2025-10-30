@@ -1,0 +1,27 @@
+{
+  "name": "vscode-isrpo-clean-spaces",
+  "displayName": "ISRPO: Clean Double Spaces",
+  "description": "Команда для удаления двойных и хвостовых пробелов",
+  "version": "0.0.1",
+  "engines": { "vscode": "^1.105.0" },
+  "main": "./out/extension.js",
+  "activationEvents": ["onCommand:isrpo.cleanSpaces"],
+  "contributes": {
+    "commands": [
+      { "command": "isrpo.cleanSpaces", "title": "ISRPO: Удалить двойные пробелы" }
+    ],
+    "keybindings": [
+      { "command": "isrpo.cleanSpaces", "key": "ctrl+alt+shift+space", "when": "editorTextFocus" }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.105.0",
+    "typescript": "^5.5.0",
+    "vsce": "^2.15.0"
+  }
+}
