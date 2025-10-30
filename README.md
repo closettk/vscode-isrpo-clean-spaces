@@ -1,1 +1,3 @@
-# vscode-isrpo-clean-spaces
+# Clean Double Spaces
+Зубарев Кирилл Сергеевич м3118
+Удаляет «мусорные» пробелы в тексте/коде
